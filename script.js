@@ -4,7 +4,7 @@ const voltar = document.querySelector(".voltar");
 
 var timesNo = 0;
 
-const showSim = () => { document.querySelector("#modalSim").style.display = "flex"; document.querySelector("#container").style.display = "none"; }
+const showSim = () => { document.querySelector("#modalSim").style.display = "flex"; document.querySelector("#container").style.display = "none"; document.querySelector(".audioSim").play(); document.querySelector(".audioS").pause();}
 
 const showNao = () => {
     nao.style.left = Math.floor(Math.random() * 150) + "px";
@@ -17,16 +17,21 @@ const showNao = () => {
 
 const times = () => {
     if (timesNo == 10) {
-        document.querySelector("#modalNao").style.display = "flex"; document.querySelector("#container").style.display = "none";
+        document.querySelector(".audioS").pause();
+        document.querySelector("#modalNao").style.display = "flex"; 
+        document.querySelector("#container").style.display = "none";
+        
+        setInterval(function () {document.querySelector(".audioNao").play();}, 4000);
+
     }
 }
 
 
 
-const showVoltar = () => { document.querySelector("#modalSim").style.display = "none"; document.querySelector("#container").style.display = "flex"; }
+const showVoltar = () => { document.querySelector("#modalSim").style.display = "none"; document.querySelector("#container").style.display = "flex"; document.querySelector(".audioSim").pause(); document.querySelector(".audioS").play();}
 
 nao.onmouseenter = () => { showNao(); times();}
-nao.onclick = () => { showNao();  }
+nao.onclick = () => { showNao();  times();}
 
 sim.onclick = () => { showSim() }
 
