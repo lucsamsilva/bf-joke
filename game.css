@@ -1,0 +1,100 @@
+*  {
+    margin: 0; 
+    padding: 0;
+}
+
+body, html {
+    height: 100vh; 
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.s-title {
+    margin-top: 10vh; 
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 350px;
+}
+
+
+h1 {
+    text-transform: uppercase;
+
+}
+
+#s-ask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    position: absolute;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border: 3px solid #5dfbfe;
+    border-radius: 56px;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+h2:hover {
+    color: #138f91;
+}
+
+.nao {
+    position: relative;
+}
+
+#modalSim {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; 
+    
+}
+
+
+#modalNao {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; 
+    
+}
+
+
+.voltar {
+    font-size: 35px;
+    color: black;
+    margin-top: 6vh;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.voltar:hover {
+    color: #138f91;
+
+}

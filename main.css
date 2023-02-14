@@ -1,0 +1,49 @@
+*  {
+    margin: 0; 
+    padding: 0;
+}
+
+body, html {
+    height: 100vh; 
+    
+}
+
+a {text-decoration: none;}
+
+#container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-img {
+    width: 500px; 
+    height: 300px;
+   
+    border-radius: 15px;
+    
+}
+
+#container h1 {
+    margin-top: 10vh;
+    padding: 10px 30px; 
+
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 3px solid #5dfbfe;
+}
+
+#container h1 {
+    color: black; 
+    transition: .5s;
+}
+
+#container h1:hover { 
+    color: #5dfbfe; 
+}
+
+
+/* -------------- MODAL SECTION------------------ */
